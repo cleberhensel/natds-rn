@@ -33,7 +33,7 @@ export const StoryNatAppBar = () => {
             onPressLeft={() => alert('press')}
             onPressRight={() => alert('press')}
           />
-          <View style={{ height: 10 }} />
+          <View style={{ height: 60 }} />
           <NatAppBar
             title="Title Text"
             iconLeft={{ svg: { name: 'outlined-navigation-menu' } }}
@@ -41,19 +41,19 @@ export const StoryNatAppBar = () => {
             onPressLeft={() => alert('press')}
             onPressRight={() => alert('press')}
           />
-          <View style={{ height: 10 }} />
+          <View style={{ height: 60 }} />
           <NatAppBar
             title="Title Text"
             iconLeft={{ svg: { name: 'outlined-navigation-menu' } }}
             onPressLeft={() => alert('press')}
             onPress={() => alert('press')}
           />
-          <View style={{ height: 10 }} />
+          <View style={{ height: 60 }} />
           <NatAppBar
             title="Title Text"
             onPress={() => alert('press')}
           />
-          <View style={{ height: 10 }} />
+          <View style={{ height: 60 }} />
           <NatAppBar
             title="Title Text"
             node={logo()}
@@ -62,7 +62,7 @@ export const StoryNatAppBar = () => {
             onPressLeft={() => alert('press')}
             onPressRight={() => alert('press')}
           />
-          <View style={{ height: 10 }} />
+          <View style={{ height: 60 }} />
           <NatAppBar
             title="Title Text"
             alignTitle="center"
@@ -71,13 +71,13 @@ export const StoryNatAppBar = () => {
             onPressLeft={() => alert('press')}
             onPress={() => alert('press')}
           />
-          <View style={{ height: 10 }} />
+          <View style={{ height: 60 }} />
           <NatAppBar
             title="Title Text"
             node={logo()}
             onPress={() => alert('press')}
           />
-          <View style={{ height: 10 }} />
+          <View style={{ height: 60 }} />
           <NatAppBar
             title="Exclusive"
             showIconLeft={false}
@@ -85,7 +85,7 @@ export const StoryNatAppBar = () => {
             onPressLeft={() => alert('press')}
             onPressRight={() => alert('press')}
           />
-          <View style={{ height: 10 }} />
+          <View style={{ height: 60 }} />
           <NatAppBar
             title="Exclusive"
             iconLeft={{ svg: { name: 'outlined-navigation-menu' } }}
@@ -93,7 +93,7 @@ export const StoryNatAppBar = () => {
             onPressLeft={() => alert('press')}
             onPress={() => alert('press')}
           />
-          <View style={{ height: 10 }} />
+          <View style={{ height: 60 }} />
           <NatAppBar
             title="Exclusive"
             showIconLeft={false}
