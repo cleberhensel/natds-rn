@@ -27,16 +27,6 @@
     "build/lib"
   ],
   "scripts": {
-    "start": "concurrently --names 'auto-import-stories,react-native' 'rnstl' 'react-native start'",
-    "start:clear": "concurrently --names 'auto-import-stories,react-native' 'rnstl' 'yarn start --reset-cache'",
-    "start:clear:cache": "rm -rf /tmp/metro-* && watchman watch-del-all && yarn start:clear",
-    "test": "jest",
-    "test:coverage": "jest --collectCoverage",
-    "test:watch": "jest --watch --collectCoverage",
-    "test:clean": "jest --update-snapshot",
-    "ios:5": "react-native run-ios --simulator=\"iPhone 5s\"",
-    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
-    "lint:fix": "eslint --fix .",
     "android": "concurrently --names 'auto-import-stories,react-native' 'rnstl' 'react-native run-android'",
     "build:lib": "tsc && babel build/lib --out-dir build/lib --ignore node_modules,dist --source-maps --copy-files --no-babelrc --presets react-native",
     "build:sample:android": "rnstl && react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res",
@@ -63,8 +53,9 @@
     "storybook:web": "node ./node_modules/@storybook/react/bin/index.js start-storybook -p 9001 -c storybook-web -s storybook-web/static",
     "storybook": "start-storybook -p 7007",
     "test:clean": "jest --update-snapshot",
-    "test:watch": "jest --watch",
-    "test": "jest --collectCoverage",
+    "test:coverage": "jest --collectCoverage",
+    "test:watch": "jest --watch --collectCoverage",
+    "test": "jest",
     "tsc": "tsc --noEmit"
   },
   "dependencies": {
